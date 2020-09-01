@@ -18,6 +18,7 @@ import Product from "./components/Product";
 import Footer from './components/Footer';
 
 
+
 class App extends Component {
   render() {
     return (
@@ -34,7 +35,6 @@ class App extends Component {
           <Route exact path="/user-login" component={Login} />
           <Route exact path="/product/:id" component={Product} />
           <Route exact path="/user-login" component={Login} />
-
           <Footer />
         </BrowserRouter>
       </div>
