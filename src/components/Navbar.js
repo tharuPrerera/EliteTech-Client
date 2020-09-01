@@ -46,6 +46,17 @@ function Navbar() {
               Contact Us <span class="sr-only">(current)</span>
             </a>
           </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item">
+            <a a className="navbar-brand text-white text-camelcase" href="#">
+              <span class="badge badge-pill red">1</span>
+                <i class="fas fa-shopping-cart pl-0"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a className="navbar-brand text-white text-camelcase" href="#">Login</a>
+          </li>                  
+              
 
           {/*
             <li className="nav-item">
