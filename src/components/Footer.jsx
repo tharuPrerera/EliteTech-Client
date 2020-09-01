@@ -14,8 +14,7 @@ function Footer() {
                     <h4>Laptop</h4>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
+                    
                 </ul>
                 </div>
 
@@ -25,8 +24,7 @@ function Footer() {
                     <h4>Desktop</h4>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
+                    
                 </ul>
                 </div>
 
@@ -36,8 +34,7 @@ function Footer() {
                     <h4>Accessories</h4>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
+                    
                 </ul>
                 </div>
 
@@ -47,8 +44,7 @@ function Footer() {
                     <h4>Contact Us</h4>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
+                   
                 </ul>
                 </div>
 
