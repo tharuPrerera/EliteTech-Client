@@ -33,8 +33,6 @@ class App extends Component {
           <Route exact path="/Userreg" component={Userreg} />
           <Route exact path="/product/:id" component={Product} />
           <Route exact path="/user-login" component={Login} />
-          <Route exact path="/product/:id" component={Product} />
-          <Route exact path="/user-login" component={Login} />
           <Footer />
         </BrowserRouter>
       </div>
