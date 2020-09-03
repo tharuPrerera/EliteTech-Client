@@ -91,7 +91,7 @@ class Login extends Component {
                       <h2>Create an account</h2>&nbsp;
                       <h5>Create an account to buy products.</h5>&nbsp;&nbsp;
                       <div className="form-group">
-                      <Link to={""} className="btn btn-danger">Create an account</Link> 
+                      <Link to={"/Userreg"} className="btn btn-danger">Create an account</Link> 
                       </div>
                   </div>
                </div>
