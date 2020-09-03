@@ -16,7 +16,7 @@ import Userreg from "./components/Userreg";
 import Login from "./components/Login";
 import Product from "./components/Product";
 import Footer from './components/Footer';
-
+import Cart from './components/Cart';
 
 
 class App extends Component {
@@ -33,6 +33,7 @@ class App extends Component {
           <Route exact path="/Userreg" component={Userreg} />
           <Route exact path="/product/:id" component={Product} />
           <Route exact path="/user-login" component={Login} />
+          <Route exact path="/cart" component={Cart}/>
           <Footer />
         </BrowserRouter>
       </div>
