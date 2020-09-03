@@ -19,7 +19,7 @@ function App() {
       <header>
         <Navbar expand="lg" variant="dark" bg="dark">
           <Navbar.Brand href="#home">
-          <Link class="text-light bg-dark" to="/"> <h1>EliteTech</h1>   </Link>
+            <Link class="text-light bg-dark" to="/"> <h1>EliteTech</h1>   </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -50,7 +50,6 @@ function App() {
 
                 <li className="nav-item active">
                   <a className="nav-link text-white text-uppercase" >
-                    
                     <Link class="text-light bg-dark" to="/">
                       Home&nbsp;
                     </Link>
@@ -67,41 +66,51 @@ function App() {
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
+
                 <li className="nav-item active">
-                  <a
-                    className="nav-link text-white text-uppercase ml-4"
-                    
-                  >
+                  <a className="nav-link text-white text-uppercase ml-4">
                     <Link class="text-light bg-dark" to="/Desktop">
                     Desktop 
                     </Link>
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
+
                 <li className="nav-item active">
-                  <a
-                    className="nav-link text-white text-uppercase ml-4"
-                    
-                  >
-                     
+                  <a className="nav-link text-white text-uppercase ml-4">
                     <Link class="text-light bg-dark" to="/Accessories">
                     Accessories 
                     </Link>
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
+
                 <li className="nav-item active">
-                  <a
-                    className="nav-link text-white text-uppercase ml-4"
-                   
-                  >
-                    
+                  <a className="nav-link text-white text-uppercase ml-4">
                     <Link class="text-light bg-dark" to="/Contactus">
                     Contact Us  
                     </Link>
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item active">
+                  <a a className="nav-link text-white text-uppercase ml-4">
+                    <Link class="text-light bg-dark" to="/Cart">Cart</Link>
+                    <span class="badge badge-pill red">1</span>
+                      <i class="fas fa-shopping-cart pl-0" ></i>
+                  </a>
+                </li>
+
+                <li class="nav-item active">
+                  <a className="nav-link text-white text-uppercase ml-4">
+                    <Link class="text-light bg-dark" to="/user-login">
+                    Login
+                    </Link>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>   
               </ul>
             </Nav>
             <Form inline>
@@ -193,10 +202,6 @@ function App() {
             </div>
           </div>
         </div>
-
-
-
-
       </div>
       */}
     </div>
