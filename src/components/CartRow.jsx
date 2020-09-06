@@ -4,13 +4,15 @@ import axios from 'axios';
 class CartRow extends Component {
     constructor(props) {
         super(props);
-        //call delete
-       
+        
+        this.deleteCartItem = this.deleteCartItem.bind(this);
     }
 
-    //delete method
+    async deleteCartItem() {
+        await axios.delete('http://localhost:5000/api/cart/'+this.props.obj._id)
+        .catch(err => console.log(err))
+    }
     
-
     render () {
         return (
             <tr>
@@ -24,7 +26,7 @@ class CartRow extends Component {
                 </td> */}
                 <td>{this.props.obj.unitPrice}</td>
                 <td>{this.props.obj.unitPrice*this.props.obj.quantity}</td>
-                <td><button className="btn btn-danger">Delete</button></td>
+                <td><button onClick={this.deleteCartItem} className="btn btn-danger">Delete</button></td>
             </tr>
         );
     }

@@ -55,7 +55,7 @@ class Desktop extends Component {
                           HP Probook 440 G7 14-inch Laptop (10th Gen Core i7-10510U/8GB/1TB HDD + 256GB SSD/Windows 10 Pro/Intel UHD 620 Graphics.
                           </Card.Text>
                           {/* <Button className="btn btn-info">Buy Now</Button>&nbsp;&nbsp; */}
-                          <Link className="btn btn-info">Buy Now</Link>
+                          <Link to={"/productDesktop/"+product._id} className="btn btn-info">Buy Now</Link>
 
                        </Card.Body>
                      </Card>
