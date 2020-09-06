@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import { Form } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
+
+import { GoogleLogin } from 'react-google-login';
+// refresh token
+import { refreshTokenSetup } from '../utils/refreshToken';
+
+const clientId =
+  '170039174173-00hitt2uf6q2rvg424k34p8vkmbp9jlq.apps.googleusercontent.com';
+
 class Login extends Component {
     constructor(props) {
       super(props);
@@ -26,6 +34,21 @@ class Login extends Component {
       // put your own code here
       alert(`Username: ${this.state.username} Password: ${this.state.password}`);
     }
+
+    onSuccess = (res) => {
+      console.log('Login Success: currentUser:', res.profileObj);
+      alert(
+        `Logged in successfully welcome ${res.profileObj.name}. \n See console for full profile object.`
+      );
+      refreshTokenSetup(res);
+    };
+  
+    onFailure = (res) => {
+      console.log('Login failed: res:', res);
+      alert(
+        `Failed to login. Please ping this to repo owner twitter.com/sivanesh_fiz`
+      );
+    };
   
     render() {
       return (
@@ -75,7 +98,7 @@ class Login extends Component {
                           <div className="form-group">
                               <input
                               type="submit"
-                              value="Submit"
+                              value="Login"
                               className="btn btn-primary"
                               />
                           </div>
@@ -83,6 +106,17 @@ class Login extends Component {
                           <p className="forgot-password text-center">
                               Forgot <a href="#">password?</a>
                           </p>
+                          <div>
+                            <GoogleLogin 
+                              clientId={clientId}
+                              buttonText="Login with Google"
+                              onSuccess={this.onSuccess}
+                              onFailure={this.onFailure}
+                              cookiePolicy={'single_host_origin'}
+                              style={{ marginTop: '100px' }}
+                              isSignedIn={true}
+                            />
+                          </div>&nbsp;&nbsp;
                      </Form>
                   </div>
                </div>
