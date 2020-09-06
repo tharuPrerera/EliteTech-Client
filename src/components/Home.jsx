@@ -70,7 +70,7 @@ class Home extends Component {
                           </Card.Text>
                           {/* <Button className="btn btn-danger">Buy Now</Button>&nbsp;&nbsp; */}
                           {/* <Link to={"/Product/"+this.props.match.params.id} className="btn btn-danger">Buy Now</Link> */}
-                          <Link className="btn btn-info">Buy Now</Link>
+                          <Link to={"/product/"+product._id} className="btn btn-info">Buy Now</Link>
 
                        </Card.Body>
                      </Card>
