@@ -15,6 +15,9 @@ import Contactus from "./components/Contactus";
 import Userreg from "./components/Userreg";
 import Login from "./components/Login";
 import Product from "./components/Product";
+import ProductAccessories from "./components/ProductAccessories";
+import ProductDesktop from "./components/ProductDesktop";
+import ProductLaptop from "./components/ProductLaptop";
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 
@@ -32,8 +35,12 @@ class App extends Component {
           <Route exact path="/Contactus" component={Contactus} />
           <Route exact path="/Userreg" component={Userreg} />
           <Route exact path="/product/:id" component={Product} />
+          <Route exact path="/productAccesories/:id" component={ProductAccessories} />
+          <Route exact path="/productDesktop/:id" component={ProductDesktop} />
+          <Route exact path="/productLaptop/:id" component={ProductLaptop} />
           <Route exact path="/user-login" component={Login} />
-          <Route exact path="/cart" component={Cart}/>
+          <Route exact path="/Cart" component={Cart}/>
+          <Route exact path="/Cart/:id" component={Cart}/>
           <Footer />
         </BrowserRouter>
       </div>
