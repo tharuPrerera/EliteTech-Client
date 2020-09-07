@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 import { GoogleLogin } from 'react-google-login';
+import { GoogleLogout  } from 'react-google-login';
 // refresh token
 import { refreshTokenSetup } from '../utils/refreshToken';
 
@@ -49,6 +50,12 @@ class Login extends Component {
         `Failed to login. Please ping this to repo owner twitter.com/sivanesh_fiz`
       );
     };
+
+    onSuccessLogout = () => {
+      console.log('Logout made successfully');
+      alert('Logout made successfully ✌');
+    };
+
   
     render() {
       return (
@@ -117,6 +124,15 @@ class Login extends Component {
                               isSignedIn={true}
                             />
                           </div>&nbsp;&nbsp;
+
+                          <div>
+                            <GoogleLogout
+                              clientId={clientId}
+                              buttonText="Logout"
+                              onLogoutSuccess={this.onSuccessLogout}
+                            ></GoogleLogout>
+                          </div>&nbsp;&nbsp;
+
                      </Form>
                   </div>
                </div>

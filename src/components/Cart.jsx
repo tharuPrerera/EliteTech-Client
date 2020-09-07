@@ -78,12 +78,14 @@ class cart extends Component {
                 <th>Product Image</th>
                   <th>Item Name</th>
                   <th>Quantity</th>
+                  <th>Update Your Quantity</th>
                   <th>Unit Price</th>
                   <th>Sub Total</th>
                   <th colSpan="4">Action</th>
                 </tr>
             </thead>
             <tbody>
+            
              {this.row()}
             </tbody>
           </table> &nbsp;&nbsp;&nbsp;&nbsp;
