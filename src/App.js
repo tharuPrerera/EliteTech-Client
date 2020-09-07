@@ -14,6 +14,7 @@ import Accessories from "./components/Accessories";
 import Contactus from "./components/Contactus";
 import Userreg from "./components/Userreg";
 import Login from "./components/Login";
+import Logout from "./components/Logout";
 import Product from "./components/Product";
 import ProductAccessories from "./components/ProductAccessories";
 import ProductDesktop from "./components/ProductDesktop";
@@ -39,6 +40,7 @@ class App extends Component {
           <Route exact path="/productDesktop/:id" component={ProductDesktop} />
           <Route exact path="/productLaptop/:id" component={ProductLaptop} />
           <Route exact path="/user-login" component={Login} />
+          <Route exact path="/user-logout" component={Logout} />
           <Route exact path="/Cart" component={Cart}/>
           <Route exact path="/Cart/:id" component={Cart}/>
           <Footer />
