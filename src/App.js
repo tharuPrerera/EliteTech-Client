@@ -12,7 +12,7 @@ import Laptop from "./components/Laptop";
 import Desktop from "./components/Desktop";
 import Accessories from "./components/Accessories";
 import Contactus from "./components/Contactus";
-//import Userreg from "./components/Userreg";
+import Userreg from "./components/Userreg";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Product from "./components/Product";
