@@ -276,6 +276,7 @@ class Userreg extends Component {
           <div class="col-md-2 col-md-offset-4"></div>
           <h4></h4>
         </div>
+        <h1></h1>
         </div>
       </div>
     );
