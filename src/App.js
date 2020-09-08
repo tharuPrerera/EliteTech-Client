@@ -12,7 +12,7 @@ import Laptop from "./components/Laptop";
 import Desktop from "./components/Desktop";
 import Accessories from "./components/Accessories";
 import Contactus from "./components/Contactus";
-import Userreg from "./components/Userreg";
+//import Userreg from "./components/Userreg";
 import Login from "./components/Login";
 import Product from "./components/Product";
 import ProductAccessories from "./components/ProductAccessories";
@@ -20,6 +20,7 @@ import ProductDesktop from "./components/ProductDesktop";
 import ProductLaptop from "./components/ProductLaptop";
 import Footer from './components/Footer';
 import Cart from './components/Cart';
+//import samplereg from "./components/samplereg";
 
 
 class App extends Component {
@@ -41,6 +42,8 @@ class App extends Component {
           <Route exact path="/user-login" component={Login} />
           <Route exact path="/Cart" component={Cart}/>
           <Route exact path="/Cart/:id" component={Cart}/>
+          {/* <Route exact path="/samplereg" component={samplereg} /> */}
+          
           <Footer />
         </BrowserRouter>
       </div>
