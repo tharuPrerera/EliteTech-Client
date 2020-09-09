@@ -38,9 +38,12 @@ class Contactus extends Component {
 
   render() {
     return (
-      <>
+      <> 
+      <h5 align="middle"><u>Home/Contactus</u></h5><br/>
         <div class="row">
+          
           <div class="col-md-2 col-md-offset-4"></div>
+          
 
           <Form onSubmit={sendEmail}>
             <Form.Group controlId="exampleForm.ControlInput1">
