@@ -21,6 +21,7 @@ import ProductDesktop from "./components/ProductDesktop";
 import ProductLaptop from "./components/ProductLaptop";
 import Footer from './components/Footer';
 import Cart from './components/Cart';
+//import samplereg from "./components/samplereg";
 
 
 class App extends Component {
@@ -43,6 +44,8 @@ class App extends Component {
           <Route exact path="/user-logout" component={Logout} />
           <Route exact path="/Cart" component={Cart}/>
           <Route exact path="/Cart/:id" component={Cart}/>
+          {/* <Route exact path="/samplereg" component={samplereg} /> */}
+          
           <Footer />
         </BrowserRouter>
       </div>
