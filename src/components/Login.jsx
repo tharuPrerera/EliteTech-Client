@@ -41,6 +41,9 @@ class Login extends Component {
       alert(
         `Logged in successfully welcome ${res.profileObj.name}. \n See console for full profile object.`
       );
+      localStorage.setItem('name', res.profileObj.name)
+      localStorage.setItem('id', res.profileObj.googleId)
+     
       refreshTokenSetup(res);
     };
   
