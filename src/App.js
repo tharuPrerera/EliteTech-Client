@@ -23,6 +23,8 @@ import Footer from './components/Footer';
 import Cart from './components/Cart';
 //import samplereg from "./components/samplereg";
 
+// import userProfileUpdate from "./components/userProfileUpdate";
+
 
 class App extends Component {
   render() {
@@ -45,6 +47,7 @@ class App extends Component {
           <Route exact path="/Cart" component={Cart}/>
           <Route exact path="/Cart/:id" component={Cart}/>
           {/* <Route exact path="/samplereg" component={samplereg} /> */}
+          {/* <Route exact path="/userUpdate/:id" component={userProfileUpdate}/> */}
           
           <Footer />
         </BrowserRouter>
