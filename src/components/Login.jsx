@@ -43,7 +43,7 @@ class Login extends Component {
       );
       localStorage.setItem('name', res.profileObj.name)
       localStorage.setItem('id', res.profileObj.googleId)
-     
+    
       refreshTokenSetup(res);
     };
   
@@ -57,6 +57,7 @@ class Login extends Component {
     onSuccessLogout = () => {
       console.log('Logout made successfully');
       alert('Logout made successfully ✌');
+      localStorage.removeItem("id");
     };
 
   
@@ -144,7 +145,11 @@ class Login extends Component {
                       <h2>Create an account</h2>&nbsp;
                       <h5>Create an account to buy products.</h5>&nbsp;&nbsp;
                       <div className="form-group">
-                      <Link to={"/Userreg"} className="btn btn-danger">Create an account</Link> 
+                        <Link to={"/Userreg"} className="btn btn-danger">Create an account</Link> &nbsp;&nbsp;
+                      </div>
+                      <div>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h2>Update your Profile.</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {/* <Link to={"/userUpdate/"+this.props.match.params.id} className="btn btn-info">Update Your Profile</Link> */}
                       </div>
                   </div>
                </div>
