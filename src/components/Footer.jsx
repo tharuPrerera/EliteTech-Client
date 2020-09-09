@@ -43,7 +43,9 @@ function Footer() {
                 <ul className="list-unstyled">
                     <h4>Contact Us</h4>
                     <li>EliteTech</li>
-                    <li>EliteTech</li>
+                    <li>120/5 Vidya Mawatha,<br/>Colombo 00700</li>
+                    <li> 011-1234567 </li>
+                    <li> 071-1234567</li>
                    
                 </ul>
                 </div>
