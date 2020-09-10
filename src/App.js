@@ -24,6 +24,12 @@ import Cart from './components/Cart';
 //import samplereg from "./components/samplereg";
 
 // import userProfileUpdate from "./components/userProfileUpdate";
+import Feedback from './components/Feedback';
+
+import Newsfeed from './components/Newsfeed';
+//import samplereg from "./components/samplereg";
+
+import Currencycon from './components/Currencycon';
 
 
 class App extends Component {
@@ -48,6 +54,10 @@ class App extends Component {
           <Route exact path="/Cart/:id" component={Cart}/>
           {/* <Route exact path="/samplereg" component={samplereg} /> */}
           {/* <Route exact path="/userUpdate/:id" component={userProfileUpdate}/> */}
+          <Route exact path="/Feedback" component={Feedback}/>
+          <Route exact path="/Newsfeed" component={Newsfeed}/>
+
+          <Route exact path="/Currencycon" component={Currencycon}/>
           
           <Footer />
         </BrowserRouter>
