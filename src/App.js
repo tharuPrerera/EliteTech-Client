@@ -21,12 +21,10 @@ import ProductDesktop from "./components/ProductDesktop";
 import ProductLaptop from "./components/ProductLaptop";
 import Footer from './components/Footer';
 import Cart from './components/Cart';
-import Feedback from './components/Feedback';
-
-import Newsfeed from './components/Newsfeed';
 //import samplereg from "./components/samplereg";
 
-import Currencycon from './components/Currencycon';
+// import userProfileUpdate from "./components/userProfileUpdate";
+
 
 class App extends Component {
   render() {
@@ -48,12 +46,8 @@ class App extends Component {
           <Route exact path="/user-logout" component={Logout} />
           <Route exact path="/Cart" component={Cart}/>
           <Route exact path="/Cart/:id" component={Cart}/>
-          <Route exact path="/Feedback" component={Feedback}/>
-          <Route exact path="/Newsfeed" component={Newsfeed}/>
-
-          <Route exact path="/Currencycon" component={Currencycon}/>
-          
           {/* <Route exact path="/samplereg" component={samplereg} /> */}
+          {/* <Route exact path="/userUpdate/:id" component={userProfileUpdate}/> */}
           
           <Footer />
         </BrowserRouter>
