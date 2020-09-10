@@ -50,13 +50,13 @@ class Login extends Component {
     onFailure = (res) => {
       console.log('Login failed: res:', res);
       alert(
-        `Failed to login. Please ping this to repo owner twitter.com/sivanesh_fiz`
+        `Failed to login. Please register or again Login`
       );
     };
 
     onSuccessLogout = () => {
       console.log('Logout made successfully');
-      alert('Logout made successfully ✌');
+      alert('Logout made successfully');
       localStorage.removeItem("id");
     };
 
@@ -149,7 +149,7 @@ class Login extends Component {
                       </div>
                       <div>&nbsp;&nbsp;&nbsp;&nbsp;
                         <h2>Update your Profile.</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {/* <Link to={"/userUpdate/"+this.props.match.params.id} className="btn btn-info">Update Your Profile</Link> */}
+                        <Link to={"/userUpdate/"+this.props.match.params.id} className="btn btn-info">Update Your Profile</Link>
                       </div>
                   </div>
                </div>

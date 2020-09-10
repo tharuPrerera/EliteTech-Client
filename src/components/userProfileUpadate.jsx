@@ -5,7 +5,7 @@ import {Col } from "react-bootstrap";
 import {FormControl} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-class Update extends Component {
+class userProfileUpadate extends Component {
 
     constructor(props) {
         super(props);
@@ -357,4 +357,4 @@ onchangeConfirmPassword(e) {
     }
 }
 
-export default Update;
+export default userProfileUpadate;
