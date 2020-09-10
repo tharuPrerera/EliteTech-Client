@@ -10,9 +10,18 @@ function Footer() {
           <div className="row">
 
                 {/*Column 1*/}
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-4">
                 <ul className="list-unstyled">
                     <h4>Explore</h4>
+
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/">
+                    Home
+                    </Link>
+                    </a>
+                    </li>
+
                     <li className="nav-item active">
                         <a className="nav-link text-white text-uppercase ml-4">
                     <Link className="text-light bg-dark" to="/Laptop">
@@ -34,19 +43,50 @@ function Footer() {
                     </Link>
                         </a>
                     </li>
+
+                   
+
                 </ul>
                 </div>
 
                 {/*Column 2*/}
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-4 col-sm-4">
+                
                 <ul className="list-unstyled">
                     <h4>Services & Support</h4>
-                    <li>News Feeds</li>
-                    <li>Currency Convert</li>
-                    <li>feedbacks</li>
-                    <li>Contact us</li>
-                    
-                </ul>
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Newsfeed">
+                    News Feeds 
+                    </Link>
+                    </a>
+                    </li>
+
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Currencycon">
+                    Currency Convert
+                    </Link>
+                    </a>
+                    </li>
+
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Feedback">
+                    feedbacks
+                    </Link>
+                    </a>
+                    </li>
+
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Contactus">
+                    Contact us
+                    </Link>
+                    </a>
+                    </li>
+                  </ul>
+
                 </div>
 
                 {/*Column 3*/}
@@ -60,7 +100,7 @@ function Footer() {
   </div>*/}
 
                 {/*Column 4*/}
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-4 col-sm-4">
                 <ul className="list-unstyled">
                     <h4>Contact Us</h4>
                     <li>EliteTech</li>
