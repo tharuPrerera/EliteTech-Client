@@ -97,9 +97,9 @@ function App() {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item active">
                   <a a className="nav-link text-white text-uppercase ml-4">
-                    <Link className="text-light bg-dark" to="/Cart">Cart</Link>
-                    <span className="badge badge-pill red">1</span>
-                      <i className="fas fa-shopping-cart pl-0" ></i>
+                    <Link class="text-light bg-dark" to="/Cart">Cart</Link>
+                    <span class="badge badge-pill red">1</span>
+                    <i class="fas fa-shopping-cart pl-0" ></i>
                   </a>
                 </li>
 
