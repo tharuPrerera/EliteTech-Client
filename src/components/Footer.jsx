@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,32 +12,52 @@ function Footer() {
                 {/*Column 1*/}
                 <div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Laptop</h4>
-                    <li>EliteTech Loptop</li>
-                    <li>EliteTech Loptop</li>
-                    
+                    <h4>Explore</h4>
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Laptop">
+                         Laptop 
+                    </Link>
+                        </a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Desktop">
+                         Desktop 
+                    </Link>
+                        </a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link text-white text-uppercase ml-4">
+                    <Link className="text-light bg-dark" to="/Accessories">
+                         Accessories 
+                    </Link>
+                        </a>
+                    </li>
                 </ul>
                 </div>
 
                 {/*Column 2*/}
                 <div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Desktop</h4>
-                    <li>EliteTech Desktop</li>
-                    <li>EliteTech Desktop</li>
+                    <h4>Services & Support</h4>
+                    <li>News Feeds</li>
+                    <li>Currency Convert</li>
+                    <li>feedbacks</li>
+                    <li>Contact us</li>
                     
                 </ul>
                 </div>
 
                 {/*Column 3*/}
-                <div className="col-md-3 col-sm-6">
+                {/*<div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Accessories</h4>
-                    <li>EliteTech Accessories</li>
-                    <li>EliteTech Accessories</li>
+                    <h4>Useful Info</h4>
+                    <li>Payments</li>
+                    <li>Shipping</li>
                     
                 </ul>
-                </div>
+  </div>*/}
 
                 {/*Column 4*/}
                 <div className="col-md-3 col-sm-6">
