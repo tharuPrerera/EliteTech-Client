@@ -104,7 +104,7 @@ class ProductLaptop extends Component {
                     <input
                       type="Number"
                       className="from-control"
-                      value={this.state.quantity}
+                      //value={this.state.quantity}
                       onChange={this.onchangeQuantity}
                     />{" "}
                       &nbsp;&nbsp;

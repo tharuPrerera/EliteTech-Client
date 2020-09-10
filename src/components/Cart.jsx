@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import CartRow from './CartRow';
 import {Link} from 'react-router-dom';
+import  { Redirect } from 'react-router-dom'
 
 class cart extends Component {
  constructor(props){
@@ -67,6 +68,21 @@ class cart extends Component {
     });
   }
 
+  checkLogin(){
+    if (localStorage.getItem('id')){
+      alert(
+        `Thank You! \n You Successfully Created Your Order. \n Wait your order Delevary.`
+      );
+    }else{
+
+      alert(
+        `Please Login or registher with EliteTech \n Then You can Successfully Create Your Order.`
+      );
+      return <Redirect to='/user-login'  />
+    }
+  }
+
+
     render() {
       return (
         <div>
@@ -89,8 +105,8 @@ class cart extends Component {
              {this.row()}
             </tbody>
           </table> &nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to={""} className="btn btn-primary" align="right">Confirm and Pay</Link>&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to={"/"} className="btn btn-primary">  Continue Shopping <i class="fa fa-arrow-right"></i></Link>
+          <Link to={""} onClick={this.checkLogin} className="btn btn-primary" align="right">Confirm and Pay</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/"} className="btn btn-primary">  Continue Shopping <i className="fa fa-arrow-right"></i></Link>
           {/* <button type="button" class="btn btn-dark">
             <i class="fa fa-arrow-right"></i> Continue Shopping
           </button> */}
