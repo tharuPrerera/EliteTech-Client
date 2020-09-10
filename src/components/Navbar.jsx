@@ -99,7 +99,7 @@ function App() {
                   <a a className="nav-link text-white text-uppercase ml-4">
                     <Link class="text-light bg-dark" to="/Cart">Cart</Link>
                     <span class="badge badge-pill red">1</span>
-                      <i class="fas fa-shopping-cart pl-0" ></i>
+                    <i class="fas fa-shopping-cart pl-0" ></i>
                   </a>
                 </li>
 

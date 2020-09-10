@@ -11,9 +11,10 @@ function Footer() {
                 {/*Column 1*/}
                 <div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Laptop</h4>
-                    <li>EliteTech Loptop</li>
-                    <li>EliteTech Loptop</li>
+                    <h4>Explore</h4>
+                    <li>About Us</li>
+                    <li>News & Events</li>
+                    <li>Feedbacks</li>
                     
                 </ul>
                 </div>
@@ -21,9 +22,9 @@ function Footer() {
                 {/*Column 2*/}
                 <div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Desktop</h4>
-                    <li>EliteTech Desktop</li>
-                    <li>EliteTech Desktop</li>
+                    <h4>Help</h4>
+                    <li>FAQ's</li>
+                    <li>Contact Us</li>
                     
                 </ul>
                 </div>
@@ -31,9 +32,9 @@ function Footer() {
                 {/*Column 3*/}
                 <div className="col-md-3 col-sm-6">
                 <ul className="list-unstyled">
-                    <h4>Accessories</h4>
-                    <li>EliteTech Accessories</li>
-                    <li>EliteTech Accessories</li>
+                    <h4>Useful Info</h4>
+                    <li>Payments</li>
+                    <li>Shipping</li>
                     
                 </ul>
                 </div>
